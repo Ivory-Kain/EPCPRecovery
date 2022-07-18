@@ -44,7 +44,13 @@ td, th {
 }
 
 body {
-  background: black;
+  background-color: black;
+}
+body p {
+  color: white;
+}
+body span {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
