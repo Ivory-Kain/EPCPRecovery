@@ -1,16 +1,135 @@
 @import "libs/reset.scss";
 
-body{
-    background-color: black;
-    a{
+body {
+    a {
         text-decoration: none;
         color: white;
     }
-    p{
+
+    p {
         color: white;
     }
-   i{
+
+    i {
         color: white;
     }
-    
+
+    h1 {
+        color: white;
+        font-size: 60px;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    header {
+        background-color: black;
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 80px;
+            margin-right: 80px;
+
+            #logo {
+                width: 150px;
+                height: 150px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 360px;
+                font-size: x-large;
+
+                li {
+                    display: flex;
+                    text-decoration: none;
+                    width: 120px;
+                    justify-content: center;
+                    border-radius: 30px;
+
+                    &:hover {
+                        box-shadow: 0 0 10px 1px white;
+                        color: white;
+                        text-decoration: none;
+                        border: white;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        
+        .firstContainer {
+          
+            
+            position: relative;
+            text-align: center;
+            height: 500px;
+
+            img {
+                
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .presentation {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    font-size: x-large;
+                    line-height: 65px;
+                }
+            }
+        }
+
+        .secondContainer {
+            position: relative;
+            height: 500px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .action {
+                
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                i{
+                    border: solid;
+                    border-radius: 30%;
+                    width: 150px;
+                    height: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: black;
+    }
 }

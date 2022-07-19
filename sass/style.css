@@ -96,58 +96,27 @@ body header .navigation ul li:hover {
 }
 body main .firstContainer {
   position: relative;
-  text-align: center;
-  height: 500px;
-}
-body main .firstContainer img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  text-align: right;
 }
 body main .firstContainer .presentation {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 body main .firstContainer .presentation p {
   font-size: x-large;
-  line-height: 65px;
 }
 body main .secondContainer {
   position: relative;
-  height: 500px;
-}
-body main .secondContainer img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  text-align: right;
 }
 body main .secondContainer .action {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-body main .secondContainer .action i {
-  border: solid;
-  border-radius: 30%;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 body footer {
   background-color: black;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
