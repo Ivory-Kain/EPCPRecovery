@@ -98,6 +98,13 @@ body header .navigation ul li:hover {
   text-decoration: none;
   border: white;
 }
+body header .navigation ul li.active {
+  box-shadow: 0 0 10px 1px white;
+  color: white;
+  text-decoration: none;
+  border: white;
+  text-decoration: underline;
+}
 body main .firstContainer {
   position: relative;
   text-align: center;
@@ -186,7 +193,24 @@ body main .secondContainer .action .availablity {
 body footer {
   background-color: black;
 }
-body footer ul {
+body footer .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+body footer .socials li:hover {
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
+body footer .copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+}
+body footer .payment {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

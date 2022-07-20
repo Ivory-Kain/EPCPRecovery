@@ -62,6 +62,13 @@ body {
                         text-decoration: none;
                         border: white;
                     }
+                    &.active{
+                        box-shadow: 0 0 10px 1px white;
+                        color: white;
+                        text-decoration: none;
+                        border: white;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -164,15 +171,32 @@ body {
     footer {
         background-color: black;
 
-        ul {
-           display: flex;
-           flex-direction: row;
-           justify-content: space-evenly;
-           align-items: center;
-           height: 100px;
+        .socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+            li{
+                &:hover{
+                    transform: scale(1.5);
+                    transition-duration: 1s;
+                }
+            }        
+        }
+        .copyright {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+        }
+        .payment{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+        }
 
-               
-            }
-        
     }
 }

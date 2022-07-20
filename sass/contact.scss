@@ -1,1 +1,96 @@
 @import "libs/reset.scss";
+body {
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+
+    i {
+        color: white;
+    }
+
+    header {
+        background-color: black;
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 80px;
+            margin-right: 80px;
+
+            #logo {
+                width: 150px;
+                height: 150px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 360px;
+                font-size: x-large;
+
+                li {
+                    display: flex;
+                    text-decoration: none;
+                    width: 120px;
+                    justify-content: center;
+                    border-radius: 30px;
+
+                    &:hover {
+                        box-shadow: 0 0 10px 1px white;
+                        color: white;
+                        text-decoration: none;
+                        border: white;
+                    }
+                    &.active {
+                        box-shadow: 0 0 10px 1px white;
+                        color: white;
+                        text-decoration: none;
+                        border: white;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        height: 600px;
+    }
+    footer {
+        background-color: black;
+
+        .socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+            li {
+                &:hover {
+                    transform: scale(1.5);
+                    transition-duration: 1s;
+                }
+            }
+        }
+        .copyright {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+        }
+        .payment {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+        }
+    }
+}
